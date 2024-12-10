@@ -19,7 +19,7 @@ git clone https://github.com/yourusername/RICH-DAD-POOR-DAD.git
 2.Open the project folder
 
 ```bash
-cd MASHAM-LTD
+cd RICH-DAD-POOR-DAD
 ```
 
 3.Open the index.html file in a browser to view the project.
