@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Dad Poor Dad | Elite Summary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <a href="#" class="logo">Rich Dad Poor Dad</a>
+        <ul class="nav-links">
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#lessons">Key Lessons</a></li>
+            <li><a href="#author">About the Author</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="chat-btn" onclick="toggleChat()">Live Chat</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+            <h1>Unlock Financial Freedom</h1>
+            <p>Discover the Secrets of Wealth with <em>Rich Dad Poor Dad</em></p>
+            <a href="#summary" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary" class="content-section fade-in">
+        <div class="container">
+            <h2>Summary of <em>Rich Dad Poor Dad</em></h2>
+            <p><img src="images/richdad.jpg" alt="Rich Dad Poor Dad" class="summary-img">
+               <strong><em>Rich Dad Poor Dad</em></strong> by Robert Kiyosaki explores contrasting financial philosophies between the author's two father figures: his biological father ("Poor Dad") and the father of his best friend ("Rich Dad"). The book emphasizes the importance of financial education, understanding assets vs. liabilities, and the value of entrepreneurship. It challenges traditional beliefs about money and encourages readers to think differently about earning and investing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Key Lessons Section with Parallax Background -->
+    <section id="lessons" class="parallax-section">
+        <div class="container">
+            <h2>Key Lessons</h2>
+            <div class="lessons-grid">
+                <div class="lesson fade-in" onclick="showLessonDetails('lesson1')">
+                    <i class="fas fa-coins"></i>
+                    <h3>The Rich Don’t Work for Money</h3>
+                </div>
+                <div class="lesson fade-in" onclick="showLessonDetails('lesson2')">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Financial Literacy is Essential</h3>
+                </div>
+                <div class="lesson fade-in" onclick="showLessonDetails('lesson3')">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Work to Learn, Not to Earn</h3>
+                </div>
+                <div class="lesson fade-in" onclick="showLessonDetails('lesson4')">
+                    <i class="fas fa-building"></i>
+                    <h3>Mind Your Own Business</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lesson Detail Modal -->
+    <div id="lessonModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="lessonTitle"></h3>
+            <p id="lessonDetails"></p>
+        </div>
+    </div>
+
+    <!-- About the Author Section -->
+    <section id="author" class="content-section fade-in">
+        <div class="container">
+            <h2>About the Author</h2>
+            <p><img src="images/kiyosaki.jpg" alt="Robert Kiyosaki" class="author-img">
+               Robert Kiyosaki is a renowned entrepreneur, investor, and author. His book <em>Rich Dad Poor Dad</em> has transformed millions of lives by teaching valuable financial insights and challenging traditional views on wealth-building.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section fade-in">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <input type="text" placeholder="Your Name" name="name" required>
+                <input type="email" placeholder="Your Email" name="email" required>
+                <textarea placeholder="Your Message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chat Section -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <h3>Live Chat</h3>
+            <button onclick="toggleChat()">&times;</button>
+        </div>
+        <div class="chat-content">
+            <p class="bot-message">Hello! How can we assist you?</p>
+            <div id="chatbox"></div>
+            <input type="text" id="userInput" placeholder="Type a message..." onkeypress="sendMessage(event)">
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+ 
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#summary">Summary</a></li>
+                        <li><a href="#lessons">Key Lessons</a></li>
+                        <li><a href="#author">About the Author</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Head Office</h3>
+                    <p>Rich Dad Education<br>
+                       123 Wealth Ave, Suite 100<br>
+                       New York, NY 10001, USA
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Additional Links</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rich Dad Education. All rights reserved.</p>
+            </div>
+        </footer>
+    
+</body>
+</html>
