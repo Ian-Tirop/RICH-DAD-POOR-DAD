@@ -24,5 +24,5 @@ cd MASHAM-LTD
 
 3.Open the index.html file in a browser to view the project.
 
-Contributing
+## Contributing
 If you'd like to contribute to this project, please fork the repository and submit a pull request. All contributions are welcome.
